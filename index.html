@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./pages/index.css">
+  <title>ARCANA</title>
+</head>
+
+<body class="page">
+  <header class="header">
+    <div class="container">
+      <nav class="nav-bar">
+        <ul class="nav-bar__list">
+            <li ><img class="nav-bar__logo" src='images/header/Logo.png' alt="Logo"></li>
+            <li class="nav-bar__check">
+              <a class="nav-bar__link" href="#">HOME</a>
+            </li>
+            <li class="nav-bar__check">
+              <a class="nav-bar__link" href="#excursions">APPEARENCE</a>
+            </li>
+            <li class="nav-bar__check">
+              <a class="nav-bar__link" href="#contacts">SHOP & CONTACTS</a>
+            </li>
+        </ul>
+        
+        <ul class="nav-bar__sup">
+          <li ><img class="nav-bar__tel_logo" src='images/header/tel_logo.png' alt="tel_logo">
+            <a class="nav-bar__number">+7 800 555 35 35</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="info header__info">
+          <img class="info__link" src='images/header/link.png' alt="link">
+          <ul class="info__invite">
+            <li class="info__list_zoo">
+               <a class="info__lists__zoo">ARCANE</a>
+            </li>  
+          </ul>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="container">
+      <div class="main__excursions">
+        <h1 class="main__exc_title" id="excursions">ARCANE</h1>
+         <p class="main__exc_text" >Arcane – things of the highest value in the game. They make the largest number of changes to the character. Almost everything changes – the overall appearance, armor, skill icons, skill effects, walking effects, and even mini-portraits. The character in the arcane is very different from the character without it – better and brighter effects immediately catch the eye.
+          </p>  
+      </div>
+
+      <div class="main__animals">
+        <h1 class="main__animals_title" id="animals">APPEARENCE</h1>
+        <ul class="animals">
+          <li ><img class="animals__img" src='images/animals/qop.jpg' alt="qop">
+            <p class="animals__text">Queen of Pain</p>
+          </li>
+          <li ><img class="animals__img" src='images/animals/pa.jpg' alt="kobra">
+            <p class="animals__text">Phantom Assassin</p>
+          </li>
+          <li ><img  class="animals__img" src='images/animals/lc.jpg' alt="dolphin">
+            <p class="animals__text">Legion Commander</p>
+          </li>
+          <li ><img  class="animals__img" src='images/animals/jug.jpg' alt="kazuar">
+            <p class="animals__text">Juggernaut</p>
+          </li>
+          <li ><img  class="animals__img" src='images/animals/sf.jpg' alt="begemot">
+            <p class="animals__text">Shadow Fiend</p>
+          </li>
+          <li ><img  class="animals__img" src='images/animals/es.png' alt="ulitka">
+            <p class="animals__text">Earthshaker</p>
+          </li>
+        </ul>  
+      </div>
+      <div class="main__contacts" >
+        <div class="contacts" >
+          <h1 class="cont__title" id="contacts">CONTACTS</h1>
+          <h2 class="cont__question">QUESTIONS</h2>
+          <div class="con__mail">
+            <form action="form">
+              <input class="email" type="email" name="mail" id="mail" onkeyup="checkParams()" placeholder="email" required>
+            </form>
+          </div>
+          <div class="con__number">
+            <form action="handler.php">
+              <input class="number" type="number" name="number" id="number" onkeyup="checkParams()" placeholder="number" required>
+            </form>
+          </div>
+          <div class="con__name">
+            <form action="handler.php">
+              <input class="name" type="text" name="text" id="name" onkeyup="checkParams()" placeholder="name" required>
+            </form>
+          </div>
+          <div class="con__questions">
+            <form action="handler.php">
+              <p><textarea name="comment" placeholder="question" required></textarea></p>
+            </form>
+          </div>
+          <div class="con__button">
+            <button class="button">Send</button>
+          </div>
+        </div>
+        <div class="con__container" id="con__container">
+          <h1 class="main__exc_title" id="excursions">SHOP</h1>
+         <p class="main__exc_text" >All the arcane presented above are also available on our website, where you can order them at the best price at any time for you. </p>  
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="footer__container">
+      <p class="fot__date">©2022</p>
+      <p class="fot__sign">antowkaog</p>
+    </div>
+  </footer>
+
+</body>
+</html>
